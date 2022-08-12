@@ -1,3 +1,14 @@
 input{
     border: 1px solid rgb(94, 114, 180) ;
+    border-radius: 5px;
+}
+#btn{
+    /* border: none; */
+    border-radius: none;
+
+}
+label{
+    min-width: 150px;
+    text-align: right;
+    /* margin-right: 5px; */
 }

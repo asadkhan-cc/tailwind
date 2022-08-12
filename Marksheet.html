@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tableJunk.css" />
+  </head>
+  <body>
+    <section>
+      <section>
+        <h1
+          class="text-center font-sans my-2 text-3xl text-slate-800 font-semibold"
+        >
+          marksheet
+        </h1>
+        <header
+          class="flex flex-row justify-evenly items-start max-w-[1000px] mx-auto"
+        >
+          <div>
+            <table class="tg font-sans">
+              <thead>
+                <tr>
+                  <th class="tg-jbyd" colspan="2">Candidate Information</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tg-iks7">Candidate Name :</td>
+                  <td id="candidateName" class="tg-iks7">Asad Ali Khan</td>
+                </tr>
+                <tr>
+                  <td class="tg-iks7">Roll NO :</td>
+                  <td class="tg-iks7">1001</td>
+                </tr>
+                <tr>
+                  <td class="tg-iks7">Class :</td>
+                  <td class="tg-iks7">XI</td>
+                </tr>
+                <tr>
+                  <td class="tg-iks7">Year :</td>
+                  <td class="tg-iks7">2022</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <table class="tg2">
+              <thead>
+                <tr>
+                  <th class="tg2-yreg" colspan="2">GRADE Point Chart</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tg2-vj5q">Letter Grade</td>
+                  <td class="tg2-vj5q">Marks Interval</td>
+                </tr>
+                <tr>
+                  <td class="tg2-uk0v">A+</td>
+                  <td class="tg2-6u1a">80-100%</td>
+                </tr>
+                <tr>
+                  <td class="tg2-uk0v">A</td>
+                  <td class="tg2-6u1a">70-80%</td>
+                </tr>
+                <tr>
+                  <td class="tg2-uk0v">B</td>
+                  <td class="tg2-6u1a">50-70%</td>
+                </tr>
+                <tr>
+                  <td class="tg2-lm6i">C</td>
+                  <td class="tg2-gzo9">40-50%</td>
+                </tr>
+                <tr>
+                  <td class="tg2-lm6i">D</td>
+                  <td class="tg2-gzo9">33-40%</td>
+                </tr>
+                <tr>
+                  <td class="tg2-b56p">F</td>
+                  <td class="tg2-g5xs">0-32%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <div class="">
+              <img
+                id="studentImage"
+                class="object-contain h-40"
+                src="/Assets/Images/avataaars.svg"
+              />
+            </div>
+          </div>
+        </header>
+      </section>
+
+      <div class="max-w-[1000px] mx-auto flex justify-center mt-3">
+        <table class="tg4" style=" width: 548px">
+          <colgroup>
+            <col style="width: 185px" />
+            <col style="width: 106px" />
+            <col style="width: 140px" />
+            <col style="width: 117px" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="tg4-ki02">Total Marks</th>
+              <th class="tg4-jepv">Out Of</th>
+              <th class="tg4-xsic">Percentage %</th>
+              <th class="tg4-xsic">Final Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="totalObtainedMarks" class="tg4-0lax"></td>
+              <td id=""  class="tg4-0lax">500</td>
+              <td id="T_perc"  class="tg4-0lax"></td>
+              <td id="F_grade"  class="tg4-0lax"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <article
+        class="flex flex-1 justify-center items-center mt-5 max-w-[1000px] mx-auto"
+      >
+        <table class="tg3" style="table-layout: fixed; width: max-content">
+          <!-- <colgroup>
+          <col style="width: 65px" />
+          <col style="width: 126px" />
+          <col style="width: 90px" />
+          <col style="width: 180px" />
+          <col style="width: 132px" />
+          <col style="width: 130px" />
+          <col style="width: 75px" />
+          <col style="width: 152px" />
+        </colgroup> -->
+          <thead>
+            <tr>
+              <th class="tg3-hx99">S.NO</th>
+              <th class="tg3-qcxc">Course.NO</th>
+              <th class="tg3-hx99">Subject</th>
+              <th class="tg3-qcxc">Marks Obtained</th>
+              <th class="tg3-nm7b">Total Marks</th>
+              <th class="tg3-nm7b">Percentage</th>
+              <th class="tg3-qcxc">Grade</th>
+              <th class="tg3-nm7b">Comments</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg3-zusl">1</td>
+              <td class="tg3-c3ow">301</td>
+              <td class="tg3-3xi5">MATH</td>
+              <td id="math_omarks" class="tg3-c3ow"></td>
+              <td class="tg3-baqh">100</td>
+              <td id="math_perc" class="tg3-baqh"></td>
+              <td id="math_grade" class="tg3-c3ow"></td>
+              <td id="math_com" class="tg3-0lax"></td>
+            </tr>
+            <tr>
+              <td class="tg3-zusl">2</td>
+              <td class="tg3-c3ow">302</td>
+              <td class="tg3-3xi5">CHEM</td>
+              <td id="chem_omarks" class="tg3-c3ow"></td>
+              <td class="tg3-baqh">100</td>
+              <td id="chem_perc" class="tg3-baqh"></td>
+              <td id="chem_grade" class="tg3-c3ow"></td>
+              <td id="chem_com" class="tg3-0lax"></td>
+            </tr>
+            <tr>
+              <td class="tg3-zusl">3</td>
+              <td class="tg3-c3ow">303</td>
+              <td class="tg3-3xi5">PHY</td>
+              <td id="phy_omarks" class="tg3-c3ow"></td>
+              <td class="tg3-baqh">100</td>
+              <td id="phy_perc" class="tg3-baqh"></td>
+              <td id="phy_grade" class="tg3-c3ow"></td>
+              <td id="phy_com" class="tg3-0lax"></td>
+            </tr>
+            <tr>
+              <td class="tg3-zusl">4</td>
+              <td class="tg3-c3ow">304</td>
+              <td class="tg3-3xi5">ENG</td>
+              <td id="eng_omarks" class="tg3-c3ow"></td>
+              <td class="tg3-baqh">100</td>
+              <td id="eng_perc" class="tg3-baqh"></td>
+              <td id="eng_grade" class="tg3-c3ow"></td>
+              <td id="eng_com" class="tg3-0lax"></td>
+            </tr>
+            <tr>
+              <td class="tg3-rvyq">5</td>
+              <td class="tg3-c3ow">305</td>
+              <td class="tg3-c3ow">P.ST</td>
+              <td id="pst_omarks" class="tg3-c3ow"></td>
+              <td class="tg3-baqh">100</td>
+              <td id="pst_perc" class="tg3-baqh"></td>
+              <td id="pst_grade" class="tg3-c3ow"></td>
+              <td id="pst_com" class="tg3-0lax"></td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+  </body>
+</html>

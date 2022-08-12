@@ -66,6 +66,7 @@ if(Validator(Arr)){
   console.log(logPercAndGrade);
   ans.innerHTML =
     "the Grade for student " + event.target[0].value + " is " + grade + ".";
+    
 bAns.style.display = "";
 
 }
@@ -114,4 +115,4 @@ let Validator = (Array) => {
 const form = document.getElementById("form");
 form.addEventListener("submit", logSubmit);
 let bAns = document.getElementById("answer");
-bAns.style.display = "none";
+bAns.style.display = "";
