@@ -8,11 +8,9 @@ function logSubmit(event) {
   console.log(event.target[1].value);
   let totalMarks = 500;
   let Arr = event.target;
-
-  //   for (var i in event.target) {
-
-  //   }
-  let totalMarksObtain =  totalMarksObtainFunc(Arr);
+    // Validator(Arr);
+if(Validator(Arr)){
+  let totalMarksObtain = totalMarksObtainFunc(Arr);
   console.log(totalMarksObtain, "after obtain function");
 
   let perc = totalMarksObtain / totalMarks;
@@ -58,8 +56,8 @@ function logSubmit(event) {
   let form = document.getElementById("form_parent");
   form.style.display = "none";
 
-  let nDiv = document.createElement("div");
-  let nHead = document.createElement("h1");
+//   let nDiv = document.createElement("div");
+//   let nHead = document.createElement("h1");
 
   //   nDiv.appendChild(nHead);
   var ans = document.getElementById("answer");
@@ -68,9 +66,13 @@ function logSubmit(event) {
   console.log(logPercAndGrade);
   ans.innerHTML =
     "the Grade for student " + event.target[0].value + " is " + grade + ".";
+bAns.style.display = "";
+
+}
+
 }
 let totalMarksObtainFunc = (Array) => {
-    let totalMarksObtain  = 0;
+  let totalMarksObtain = 0;
   for (let i = 1; i <= 5; i++) {
     if (
       Array[i].value != null &&
@@ -93,5 +95,23 @@ let totalMarksObtainFunc = (Array) => {
   return totalMarksObtain;
 };
 
+let Validator = (Array) => {
+  if (Array[0].value == "") {
+    alert("addstudent name");
+    return;
+  }
+  for (let i = 1; i <= 5; i++) {
+    if (Array[i].value == "") {
+      alert("add marks in " + Array[i].name);
+      return
+    } else if (Number(Array[i].value > 100)) {
+      alert("Marks should be less than 100");
+        return
+    } 
+  }return true;
+};
+
 const form = document.getElementById("form");
 form.addEventListener("submit", logSubmit);
+let bAns = document.getElementById("answer");
+bAns.style.display = "none";

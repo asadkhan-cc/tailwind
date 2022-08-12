@@ -9,43 +9,45 @@
     <link rel="stylesheet" href="form.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <section
-      id="form_parent"
-      class="block p-10 rounded-lg shadow-lg bg-white max-w-md mr-7"
-    >
-      <!-- onsubmit="formSubmitHandeler()" -->
-      <!-- onsubmit="formSubmitHandeler()" -->
-      <form id="form">
-        <label for="s_name">NAME Of Student</label><br />
-        <input type="text" name="Student_Name" /><br />
+  <body class="bg-gray-500 "> 
+    <article class=" flex flex-row justify-center items-center content-center">
+      <section
+        id="form_parent"
+        class="flex-auto   p-10 rounded-lg shadow-lg bg-white max-w-md mr-7"
+      >
+        <!-- onsubmit="formSubmitHandeler()" -->
+        <!-- onsubmit="formSubmitHandeler()" -->
+        <form id="form">
+          <label for="s_name">NAME Of Student</label><br />
+          <input type="text" name="Student_Name" /><br />
 
-        <label for="sub1">Maths</label><br />
-        <input type="number" name="sub1" /><br />
+          <label for="sub1">Maths</label><br />
+          <input type="number" name="sub1" /><br />
 
-        <label for="sub2">CHEM</label><br />
-        <input type="number" name="sub2" /><br />
+          <label for="sub2">CHEM</label><br />
+          <input type="number" name="sub2" /><br />
 
-        <label for="sub3">PHY</label><br />
-        <input type="number" name="sub3" /><br />
+          <label for="sub3">PHY</label><br />
+          <input type="number" name="sub3" /><br />
 
-        <label for="sub4">ENG</label><br />
-        <input type="number" name="sub4" /><br />
+          <label for="sub4">ENG</label><br />
+          <input type="number" name="sub4" /><br />
 
-        <label for="sub5">P.ST</label><br />
-        <input type="number" name="sub5" /><br />
+          <label for="sub5">P.ST</label><br />
+          <input type="number" name="sub5" /><br />
 
-        <input
-          class="px-4 py-1 mt-5 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
-          type="submit"
-          value="Submit"
-        />
-        <hr />
-      </form>
-    </section>
-    <section>
-      <h1 id="answer">.</h1>
-    </section>
-    <script src="marksheet.js"></script>
+          <input
+            class="px-4 py-1 mt-5 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
+            type="submit"
+            value="Submit"
+          />
+          <hr />
+        </form>
+      </section>
+      <section>
+        <h1 id="answer" class="my-20 p-4 text-white text-5xl bg-red-400"></h1>
+      </section>
+      <script src="marksheet.js"></script>
+    </article>
   </body>
 </html>
