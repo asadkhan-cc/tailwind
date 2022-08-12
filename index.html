@@ -7,18 +7,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="form.css" />
-    <script src="marksheet.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-  
   </head>
   <body>
-   
-    <section id="FORM" class="block p-10 rounded-lg shadow-lg bg-white max-w-md mr-7">
-        <!-- onsubmit="formSubmitHandeler()" -->
-        <!-- onsubmit="formSubmitHandeler()" -->
-      <form id="form" >
+    <section
+      id="form_parent"
+      class="block p-10 rounded-lg shadow-lg bg-white max-w-md mr-7"
+    >
+      <!-- onsubmit="formSubmitHandeler()" -->
+      <!-- onsubmit="formSubmitHandeler()" -->
+      <form id="form">
         <label for="s_name">NAME Of Student</label><br />
-        <input type="text" name="s_name" /><br />
+        <input type="text" name="Student_Name" /><br />
 
         <label for="sub1">Maths</label><br />
         <input type="number" name="sub1" /><br />
@@ -39,21 +39,13 @@
           class="px-4 py-1 mt-5 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
           type="submit"
           value="Submit"
-        /> </hr>
+        />
+        <hr />
       </form>
-    <section></section>
-
-    <script>
-        function logSubmit(event) {
-          event.preventDefault();
-          console.log(event.target[0].value);
-        }
-
-        const form = document.getElementById('form');
-        form.addEventListener('submit', logSubmit);
-      </script>
+    </section>
+    <section>
+      <h1 id="answer">.</h1>
+    </section>
+    <script src="marksheet.js"></script>
   </body>
-
-  
-
 </html>
