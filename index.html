@@ -15,47 +15,49 @@
     <article class="flex flex-row justify-center items-center content-center">
       <section
         id="form_parent"
-        class="flex-auto p-1 rounded-lg shadow-lg bg-white max-w-md mt-24"
+        class="flex-auto p-1 rounded-lg shadow-lg bg-white max-w-max mt-24"
       >
         <!-- onsubmit="formSubmitHandeler()" -->
         <!-- onsubmit="formSubmitHandeler()" -->
 
         <form
           id="form"
-          class="flex flex-col justify-center items-center max-h-max py-2 flex-auto"
+          class="flex max-w-max m-auto flex-col justify-center items-center max-h-max py-2 flex-auto"
         >
           <h1 class="text-2xl underline underline-offset-3 font-bold">
             Mark Sheet Generator
           </h1>
           <br />
-          <!-- <div class="flex flex-row justify-between gap-5 m-1">
+          <div class="flex flex-row justify-between gap-5 m-1">
             <label for="s_name">Candidate Name : </label>
-            <input required type="text" name="Student_Name" />
+            <input id="candidate_name_inp" required type="text" name="Student_Name" />
+            <div id="candidate_name_inp_text" class="text-sm text-red-600"> Add&nbspName </div>
+          
           </div>
           <div class="flex flex-row justify-between gap-5 m-1">
-            <label for="sub1">Maths :</label>
-            <input required type="number" name="sub1" />
+            <label for="sub1">MATH :</label>
+            <input required type="number" name="sub1"min="0" max="100" />
           </div>
           <div class="flex flex-row justify-between gap-5 m-1">
             <label for="sub2">CHEM :</label>
-            <input required type="number" name="sub2" />
+            <input required type="number" name="sub2"min="0" max="100" />
           </div>
           <div class="flex flex-row justify-between gap-5 m-1">
             <label for="sub3">PHY :</label>
-            <input required type="number" name="sub3" />
+            <input required type="number" name="sub3"min="0" max="100" />
           </div>
           <div class="flex flex-row justify-between gap-5 m-1">
             <label for="sub4">ENG :</label>
-            <input required type="number" name="sub4" />
+            <input required type="number" name="sub4"min="0" max="100" />
           </div>
           <div class="flex flex-row justify-between gap-5 m-1">
             <label for="sub5">P.ST :</label>
-            <input required type="number" name="sub5" />
+            <input required type="number" name="sub5"min="0" max="100" />
           </div>
           <div class="flex flex-row justify-between gap-5 m-1">
             <label for="studentImage">Add Image:</label>
-            <input required type="file" name="studentImage" />
-          </div> -->
+            <input id="img_tag_id" required type="file" name="studentImage" />
+          </div>
           <div>
             <input
             id="btn"
@@ -148,11 +150,11 @@
                 </table>
               </div>
               <div>
-                <div class="">
+                <div id="cad_image" class="">
                   <img
                     id="studentImage"
                     class="object-contain h-40"
-                    src="/Assets/Images/avataaars.svg"
+                    
                   />
                 </div>
               </div>
